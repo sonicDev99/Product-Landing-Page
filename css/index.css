@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #191919;
+}
+
+/* Navbar Section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.nav-items {
+    display: flex;
+    gap: 50px;
+    font-size: 19px;
+}
+.active-item {
+    color: #fe6d48;
+}
+
+/* Intro Section */
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem;
+}
+
+/* Left Intro Section */
+
+.left-section h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.left-section h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4rem;
+
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+
+.sub-headlines {
+    font-size: 1.6rem;
+}
+
+.sub-headline {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 4rem;
+}
+
+.sub-headline img {
+    background-color: #fe5e35;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin-top: 3rem;
+    color: #9b9999;
+    padding-right: 98px;
+}
+
+.action-btns {
+    margin-top: 3rem;
+}
+
+.action-btns .action-btn:nth-child(1) {
+    margin-right: 20px;
+}
+
+.action-btn {
+    border-radius: 45px;
+    padding: 14px 28px;
+    background-color: #fe5e35;
+    border: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Right Intro Section */
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headphone-div {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    bottom: 13%;
+    left: -8%;
+}
+.discount-content {
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+}
+.discount-content h4 {
+    font-size: 14px;
+}
+.discount-content h1 {
+    font-size: 50px;
+}
+
+.dots {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+.dot {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.yellow-dot {
+    background-color: #fbd104;
+}
+.tomato-dot {
+    background-color: #fe6d48;
+}
+.black-dot {
+    background-color: #000000;
+}
+
+@media screen and (max-width: 1400px) {
+    .left-section {
+        width: 60vw;
+    }
+    .right-section {
+        width: 40vw;
+    }
+    img[alt='headphone'] {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .intro-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .left-section {
+        width: 100vw;
+    }
+    .right-section {
+        width: 100vw;
+        align-items: center;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+}
